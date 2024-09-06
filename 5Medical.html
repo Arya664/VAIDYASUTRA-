@@ -1,0 +1,126 @@
+<style>
+    .medical-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      padding: 146px 80px;
+      font: 400 19px Poppins, sans-serif;
+    }
+    
+    .medical-form {
+      background-color: #fff;
+      box-shadow: 0 4px 63px rgba(0, 0, 0, 0.25);
+      width: 829px;
+      max-width: 100%;
+      padding: 55px 80px;
+    }
+    
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      min-height: 120px;
+      margin-bottom: 20px;
+    }
+    
+    .form-input {
+      border-radius: 12px;
+      min-height: 56px;
+      width: 100%;
+      border: 1px solid #000;
+      margin-top: 4px;
+    }
+    
+    .radio-group {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+    }
+    
+    .radio-button {
+      background-color: #d9d9d7;
+      border-radius: 50%;
+      width: 39px;
+      height: 39px;
+      margin-right: 16px;
+    }
+    
+    .radio-label {
+      color: #000;
+      margin-right: 40px;
+    }
+    
+    .submit-button {
+      border-radius: 7px;
+      background-color: #001aff;
+      color: #fff;
+      padding: 10px 24px;
+      font: 24px Outfit, sans-serif;
+      border: none;
+      cursor: pointer;
+    }
+    
+    @media (max-width: 991px) {
+      .medical-details {
+        padding: 100px 20px;
+      }
+    
+      .medical-form {
+        padding: 0 20px;
+      }
+    
+      .form-group,
+      .form-input {
+        max-width: 100%;
+      }
+    
+      .radio-group {
+        flex-wrap: wrap;
+      }
+    
+      .radio-label {
+        margin-right: 20px;
+      }
+    
+      .submit-button {
+        padding: 10px 20px;
+        white-space: normal;
+      }
+    }
+    </style>
+    <div style="background-image: linear-gradient(to right,#00365A,#0B99A7);">
+    <section class="medical-details">
+      <form class="medical-form">
+        <div class="form-group">
+          <label for="allergies">Allergies :</label>
+          <input type="text" id="allergies" class="form-input" aria-label="Enter allergies">
+        </div>
+        <div class="form-group">
+          <label for="chronic-diseases">Chronic Diseases :</label>
+          <input type="text" id="chronic-diseases" class="form-input" aria-label="Enter chronic diseases">
+        </div>
+        <div class="form-group">
+          <label for="blood-group">Blood Group :</label>
+          <input type="text" id="blood-group" class="form-input" aria-label="Enter blood group">
+        </div>
+        <div class="form-group">
+          <label for="other-problems">Other Problems :</label>
+          <input type="text" id="other-problems" class="form-input" aria-label="Enter other problems">
+        </div>
+        <div class="form-group">
+          <label>Do You Have Medical Insurance :</label>
+          <div class="radio-group">
+            <input type="radio" id="insurance-yes" name="insurance" class="visually-hidden">
+            <label for="insurance-yes" class="radio-button" tabindex="0" role="radio" aria-checked="false"></label>
+            <span class="radio-label">YES</span>
+            <input type="radio" id="insurance-no" name="insurance" class="visually-hidden">
+            <label for="insurance-no" class="radio-button" tabindex="0" role="radio" aria-checked="false"></label>
+            <span class="radio-label">NO</span>
+          </div>
+        </div>
+        <div style="margin-top: 5px; text-align: center; width: 100px;height: 30px;  background-color:#089BAB;color: white;border-radius: 15px; font-weight:bolder;"><a style="margin-top: 10px;" href="6Homepage.php">SUBMIT</a></div>
+   
+      </form>
+    </section>
+</div>

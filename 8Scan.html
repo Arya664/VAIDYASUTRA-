@@ -1,0 +1,121 @@
+<style>
+    .biometric-update {
+      background-color: #BAFFF2;
+      display: flex;
+      gap: 40px 100px;
+      overflow: hidden;
+      flex-wrap: wrap;
+      padding: 10px 80px 16px 16px;
+    }
+    
+    .navigation {
+      border-radius: 42px;
+      background-color: #089BAB;
+      display: flex;
+      flex-direction: column;
+      color: #FFF;
+      padding: 115px 10px 289px;
+      font: 400 32px Poppins, sans-serif;
+    }
+    
+    .nav-item {
+      align-self: center;
+    }
+    
+    .nav-item-profile {
+      margin-top: 102px;
+    }
+    
+    .nav-item-circle {
+      border-radius: 98px;
+      background-color: #FFF;
+      margin-top: 60px;
+      color: #000;
+      white-space: nowrap;
+      text-align: center;
+      padding: 42px 5px;
+    }
+    
+    .nav-item-medical {
+      text-align: center;
+      margin-top: 61px;
+    }
+    
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      color: #6A80AA;
+      text-align: center;
+      margin: auto 0;
+      font: 40px Righteous, sans-serif;
+    }
+    
+    .biometric-image {
+      aspect-ratio: 1.12;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .update-text {
+      text-shadow: 0 4px 29px rgba(0, 0, 0, 0.25);
+      margin-top: 44px;
+    }
+    
+    @media (max-width: 991px) {
+      .biometric-update {
+        padding-right: 20px;
+      }
+    
+      .navigation {
+        padding: 100px 0;
+      }
+    
+      .nav-item-profile {
+        margin-top: 40px;
+      }
+    
+      .nav-item-circle {
+        white-space: initial;
+        margin: 40px 4px 0;
+      }
+    
+      .nav-item-medical {
+        margin-top: 40px;
+      }
+    
+      .content-wrapper {
+        max-width: 100%;
+      }
+    
+      .biometric-image {
+        max-width: 100%;
+        margin-right: 5px;
+      }
+    
+      .update-text {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    </style>
+    
+    <section class="biometric-update">
+        <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/9b386b04-4490-4bcc-b2d8-78805d36d09c/webchat/v2.1/config.js"></script>
+      <nav class="navigation">
+        <a href="6Homepage.php" class="nav-item">Home</a>
+        <a href="7Profile.html" class="nav-item nav-item-profile">Profile</a>
+        <div class="nav-item nav-item-circle" tabindex="0" role="button">
+          Scan <br /> Update
+        </div>
+        <a href="9Med.html" class="nav-item nav-item-medical">
+          Medical <br /> Details
+        </a>
+      </nav>
+      <div class="content-wrapper">
+        <img loading="lazy" height="500px" width="500px" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9074478df7f44d7b27d8cde65b9af9a1f993f2b270e6ca7311de175ea585542b?placeholderIfAbsent=true&apiKey=f58a2b2b5bf2488ead47f03c304dfa45" class="biometric-image" alt="Biometric scan illustration" />
+        <p class="update-text">Click for Biometric Update</p>
+      </div>
+    </section>
